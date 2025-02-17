@@ -1,4 +1,4 @@
-import SwipeableViews from 'react-swipeable-views';
+import SwipeableViews from 'react-swipeable-views-react-18';
 import { autoPlay } from 'react-swipeable-views-utils-react-18-fix';
 import MobileStepper from '@mui/material/MobileStepper';
 import { Box, useTheme } from '@mui/material';
@@ -17,6 +17,7 @@ export const ProductBanner = ({images}) => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
 
+    
     const handleBack = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
